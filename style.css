@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background: url('images/bg.jpg');
+    min-height: 100vh;
+    background-size: 110vw 105vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+#scoreBox{
+    position: absolute;
+    top: 50px;
+    left: 120px;
+    background-color: rgb(0 213 255 / 16%);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Itim', cursive;
+    font-size: 30px;
+}
+#gameBoard{
+    background: linear-gradient(rgb(58, 167, 24),rgb(11, 97, 40));
+    width: 95vmin;
+    height: 92vmin;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+    box-shadow: 5px 10px rgb(204, 226, 204);
+}
+
+.snakeHead{
+    background-color:rgba(15, 3, 3, 0.856) ;
+    border-radius: 2px;
+}
+.snakeBody{
+    background:linear-gradient(rgba(17, 12, 15, 0.788),rgb(116, 126, 120));
+    border-radius: 2px;
+}
+.food{
+    background-color: rgb(230, 24, 24);
+    border-radius: 2px;
+}
+.swal-icon img{
+    width: 120px;
+    height: 120px;
+  }
+  .swal-button {
+    background-color: crimson;
+    border: none;
+  }
+  
